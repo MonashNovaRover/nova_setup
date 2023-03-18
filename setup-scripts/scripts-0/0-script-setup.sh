@@ -4,6 +4,7 @@
 TITLE='\033[0;36;1m'
 INFO='\033[0;32;1m'
 END='\033[0m'
+ARCH=$(uname -m)
 
 # Create a print function
 title () {
