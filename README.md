@@ -8,7 +8,7 @@ Contains dockerfiles, scripts and other files to set up a Nova development envir
 ### nova-dev-base
 An Ubuntu system with some general dependencies.  
 Includes python, C++, vim, nano, and a user called nova-dev with sudo priveleges.  
-Has access to a nova_ws folder on the host, and has access to the host's SSH info for using git.  
+Has access to a nova_ws folder on the host for sharing source code with the host, and has access to the host's SSH info for using git.  
 
 ### nova-dev-ros2
 A complete Ubuntu Nova development environment.  
