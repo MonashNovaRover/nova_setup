@@ -6,15 +6,15 @@ Contains dockerfiles, scripts and other files to set up a Nova development envir
 ## Images in this repo
 
 ### nova-dev-base
-A basic Ubuntu 18.04 system with some general dependencies.  
+An Ubuntu system with some general dependencies.  
 Includes python, C++, vim, nano, and a user called nova-dev with sudo priveleges.  
 Has access to a nova_ws folder on the host, and has access to the host's SSH info for using git.  
 
 ### nova-dev-ros2
-A (mostly) complete Ubuntu 18.04 Nova development environment.  
-Includes everything from nova-dev-base, and has all the Nova repos set up by default and all dependencies (except the GUI, but including KDL) installed.  
-Has access to a nova_ws folder on the host, and has access to the host's SSH info for using git.  
-Is not fully secure - consider running untrusted code within this container as running it on your machine directly
+A complete Ubuntu Nova development environment.  
+Includes everything from nova-dev-base, and has all the Nova repos set up by default and all dependencies (including for cameras, GUI, arm control) installed.  
+Has access to a nova_ws folder on the host for sharing source code with the host, and has access to the host's SSH info for using git.  
+Requires access to connected devices, so is not fully secure - consider running untrusted code within this container as running it on your machine directly.
 
 
 ## Using an image
