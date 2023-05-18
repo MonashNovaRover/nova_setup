@@ -9,5 +9,6 @@ information "Installing GUI Tools..."
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 sudo apt install -y nodejs
 # Flask
+pip3 install eventlet
 pip3 install flask_cors
 pip3 install flask_socketio
